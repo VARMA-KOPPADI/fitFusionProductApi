@@ -7,10 +7,10 @@ import org.modelmapper.ModelMapper;
 public class ProductCategoryMapper {
     public static final ModelMapper mapper = new ModelMapper();
 
-    public static ProductCategory convertToDto(ProductCategoryDto productCategorydto) {
-        return mapper.map(productCategorydto, ProductCategory.class);
-    }
-    public static ProductCategoryDto ConvertToEntity(ProductCategory productCategory) {
+    public static ProductCategoryDto convertToDto(ProductCategory productCategory) {
         return mapper.map(productCategory, ProductCategoryDto.class);
+    }
+    public static ProductCategory ConvertToEntity(ProductCategoryDto productCategoryDto) {
+        return mapper.map(productCategoryDto, ProductCategory.class);
     }
 }

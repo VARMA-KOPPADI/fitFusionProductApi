@@ -2,6 +2,7 @@ package com.fitFusion.productsApi.serviceimpl;
 
 import com.fitFusion.productsApi.dto.ProductCategoryDto;
 import com.fitFusion.productsApi.dto.ProductDto;
+import com.fitFusion.productsApi.entity.ProductCategory;
 import com.fitFusion.productsApi.mapper.ProductCategoryMapper;
 import com.fitFusion.productsApi.repository.ProductCategoryRepo;
 import com.fitFusion.productsApi.repository.ProductRepo;
@@ -27,11 +28,12 @@ public class ProductServiceImpl implements ProductService {
                 .stream()
                 .map(ProductCategoryMapper::convertToDto)
                 .collect(Collectors.toList());
+
     }
 
     @Override
     public List<ProductDto> getProductsByCategory(Long categoryId) {
-        return List.of();
+        return null;
     }
 
     @Override
