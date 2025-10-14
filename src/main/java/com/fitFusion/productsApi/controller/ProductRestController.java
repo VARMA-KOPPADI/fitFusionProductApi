@@ -50,6 +50,24 @@ public class ProductRestController {
         }
     }
 
+    @GetMapping("/search/{name}")
+    public ResponseEntity<ApiResponse<List<ProductDto>>> searchProductByName(@PathVariable String name) {
+        ApiResponse<List<ProductDto>> response = new ApiResponse<>();
+        List<ProductDto> products = productService.getProductsByName(name);
+        if (products.isEmpty()) {
+            response.setStatus(500);
+            response.setMessage("no products availabe");
+            response.setData(null);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        } else {
+            response.setStatus(200);
+            response.setMessage("fetched products successfully");
+            response.setData(products);
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        }
+    }
+
+
     @GetMapping("/product/{productId")
     public ResponseEntity<ApiResponse<ProductDto>> productByID(@PathVariable Long productId) {
         ApiResponse<ProductDto> response = new ApiResponse<>();
@@ -58,13 +76,12 @@ public class ProductRestController {
             response.setStatus(500);
             response.setMessage("Failed to fetch the product");
             response.setData(null);
-            return new ResponseEntity<>(response,HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-        else {
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        } else {
             response.setStatus(200);
-            response.setMessage("fetched produzct details successfully");
+            response.setMessage("fetched product details successfully");
             response.setData(byID);
-            return new ResponseEntity<>(response,HttpStatus.OK);
+            return new ResponseEntity<>(response, HttpStatus.OK);
         }
     }
 
