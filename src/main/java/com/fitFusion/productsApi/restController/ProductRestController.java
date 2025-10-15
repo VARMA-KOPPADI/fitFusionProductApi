@@ -1,7 +1,9 @@
-package com.fitFusion.productsApi.controller;
+package com.fitFusion.productsApi.restController;
 
 import com.fitFusion.productsApi.dto.ProductCategoryDto;
 import com.fitFusion.productsApi.dto.ProductDto;
+import com.fitFusion.productsApi.exception.NoProductCategoriesFoundException;
+import com.fitFusion.productsApi.exception.NoProductsFoundException;
 import com.fitFusion.productsApi.response.ApiResponse;
 import com.fitFusion.productsApi.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +24,11 @@ public class ProductRestController {
         ApiResponse<List<ProductCategoryDto>> response = new ApiResponse<>();
         List<ProductCategoryDto> allCategories = productService.getAllCategories();
         if (allCategories.isEmpty()) {
-            response.setStatus(500);
+/*            response.setStatus(500);
             response.setData(null);
             response.setMessage("product category not available");
-            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);*/
+            throw new NoProductCategoriesFoundException("product categories not available");
         } else {
             response.setStatus(200);
             response.setMessage("fetched all product categories successfully");
@@ -39,10 +42,11 @@ public class ProductRestController {
         ApiResponse<List<ProductDto>> response = new ApiResponse<>();
         List<ProductDto> products = productService.getProductsByCategory(categoryId);
         if (products.isEmpty()) {
-            response.setStatus(500);
+          /*  response.setStatus(500);
             response.setData(null);
             response.setMessage("product not available in this category");
-            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);*/
+            throw new NoProductsFoundException("products not available in this category");
         } else {
             response.setStatus(200);
             response.setMessage("fetched products by category successfully");
@@ -56,10 +60,12 @@ public class ProductRestController {
         ApiResponse<List<ProductDto>> response = new ApiResponse<>();
         List<ProductDto> products = productService.getProductsByName(name);
         if (products.isEmpty()) {
-            response.setStatus(500);
+           /* response.setStatus(500);
             response.setMessage("no products availabe");
             response.setData(null);
-            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);*/
+            throw new NoProductsFoundException("products not available");
+
         } else {
             response.setStatus(200);
             response.setMessage("fetched products successfully");
@@ -74,10 +80,11 @@ public class ProductRestController {
         ApiResponse<ProductDto> response = new ApiResponse<>();
         ProductDto byID = productService.getProductByID(productId);
         if (byID == null) {
-            response.setStatus(500);
+          /*  response.setStatus(500);
             response.setMessage("Failed to fetch the product");
             response.setData(null);
-            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);*/
+            throw  new NoProductsFoundException("product not found with given id");
         } else {
             response.setStatus(200);
             response.setMessage("fetched product details successfully");
