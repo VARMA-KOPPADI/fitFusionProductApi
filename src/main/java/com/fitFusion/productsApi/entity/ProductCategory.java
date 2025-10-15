@@ -4,16 +4,22 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
+@Table(name="product_category")
 @Setter
 @Getter
-@Table(name = "PRODUCT_CATEGORY")
 public class ProductCategory {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long categoryId;
+    private Long categoryId;
+
     private String categoryName;
-    @OneToMany(mappedBy ="productCategory",cascade = CascadeType.ALL)
-    private Product product;
+
     private String active;
+
 }

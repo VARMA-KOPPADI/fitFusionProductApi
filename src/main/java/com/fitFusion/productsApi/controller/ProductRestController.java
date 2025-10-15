@@ -9,14 +9,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+@RestController
 public class ProductRestController {
     @Autowired
     private ProductService productService;
 
-    @GetMapping("/productCategories")
+    @GetMapping("/categories")
     public ResponseEntity<ApiResponse<List<ProductCategoryDto>>> getAllCategories() {
         ApiResponse<List<ProductCategoryDto>> response = new ApiResponse<>();
         List<ProductCategoryDto> allCategories = productService.getAllCategories();
@@ -68,7 +69,7 @@ public class ProductRestController {
     }
 
 
-    @GetMapping("/product/{productId")
+    @GetMapping("/product/{productId}")
     public ResponseEntity<ApiResponse<ProductDto>> productByID(@PathVariable Long productId) {
         ApiResponse<ProductDto> response = new ApiResponse<>();
         ProductDto byID = productService.getProductByID(productId);

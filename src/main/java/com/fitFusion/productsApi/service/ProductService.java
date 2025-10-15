@@ -4,7 +4,6 @@ import com.fitFusion.productsApi.dto.ProductCategoryDto;
 import com.fitFusion.productsApi.dto.ProductDto;
 
 import java.util.List;
-import java.util.stream.Stream;
 
 public interface ProductService {
 

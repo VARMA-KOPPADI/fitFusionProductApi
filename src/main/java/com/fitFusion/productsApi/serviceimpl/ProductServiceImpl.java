@@ -32,7 +32,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDto> getProductsByCategory(Long categoryId) {
-        return productRepo.findByProductCategoryCategoryId(categoryId)
+        return productRepo.findByCategoryCategoryId(categoryId)
                 .stream()
                 .map(ProductMapper::convertToDto)
                 .collect(Collectors.toList());
@@ -40,7 +40,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDto> getProductsByName(String productName) {
-        return productRepo.findByNameEqualIgnoreCase()
+        return productRepo.findByNameContainingIgnoreCase(productName)
                 .stream()
                 .map(ProductMapper::convertToDto)
                 .collect(Collectors.toList());

@@ -5,31 +5,35 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Entity
-@Getter
+@Table(name = "product")
 @Setter
-@Table(name = "PRODUCT")
+@Getter
 public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long productId;
+    private Long productId;
     private String name;
     private String description;
     private String title;
     private BigDecimal unitPrice;
-    private String imageURL;
+    private String imageUrl;
     private boolean active;
     private int unitsInStock;
-    @CreationTimestamp
-    private LocalDateTime dateCreated;
-    @UpdateTimestamp
-    private LocalDateTime lastUpdated;
-    @ManyToOne
-    @JoinColumn (name = "category_Id",nullable = false)
-    private ProductCategory productCategory;
-}
 
+    @CreationTimestamp
+    private LocalDate dateCreated;
+
+    @UpdateTimestamp
+    private LocalDate lastUpdated;
+
+    @ManyToOne
+    @JoinColumn(name="category_id", nullable = false)
+    private ProductCategory category;
+
+
+}
