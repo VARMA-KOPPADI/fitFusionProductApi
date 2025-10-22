@@ -52,7 +52,7 @@ public class ProductRestController {
             response.setData(null);
             response.setMessage("product not available in this category");
             return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);*/
-            throw new NoProductsFoundException("products not available in this category");
+            throw new NoProductsFoundException("products not available in this category : /products/{categoryId}");
         } else {
             response.setStatus(200);
             response.setMessage("fetched products by category successfully");
@@ -96,7 +96,7 @@ public class ProductRestController {
             response.setMessage("Failed to fetch the product");
             response.setData(null);
             return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);*/
-            throw  new NoProductsFoundException("product not found with given id");
+            throw  new NoProductsFoundException("product not found with given id :"+"endPoint:/product/{productId}" );
         } else {
             response.setStatus(200);
             response.setMessage("fetched product details successfully");
