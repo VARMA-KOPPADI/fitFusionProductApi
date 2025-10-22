@@ -1,0 +1,214 @@
+2025-10-21 16:57:21,882 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils      .detectDefaultConfigurationClasses:83 - Could not detect default configuration classes for test class [com.fitFusion.productsApi.ProductsApiApplicationTests]: ProductsApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-21 16:57:22,084 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper       .getOrFindConfigurationClasses:234 - Found @SpringBootConfiguration com.fitFusion.productsApi.ProductsApiApplication for test class com.fitFusion.productsApi.ProductsApiApplicationTests
+2025-10-21 16:57:22,398 [main] INFO  o.s.b.d.r.RestartApplicationListener              .onApplicationStartingEvent:74 - Restart disabled due to context in which it is running
+2025-10-21 16:57:22,819 [main] INFO  c.f.p.ProductsApiApplicationTests                 .logStarting:50 - Starting ProductsApiApplicationTests using Java 17.0.16 with PID 8748 (started by koppa in C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi)
+2025-10-21 16:57:22,821 [main] INFO  c.f.p.ProductsApiApplicationTests                 .logStartupProfileInfo:654 - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 16:57:24,099 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 16:57:24,200 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:211 - Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2025-10-21 16:57:25,016 [main] INFO  o.hibernate.jpa.internal.util.LogHelper           .logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 16:57:25,147 [main] INFO  org.hibernate.Version                             .logVersion:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-10-21 16:57:25,223 [main] INFO  o.h.c.internal.RegionFactoryInitiator             .initiateService:50 - HHH000026: Second-level cache disabled
+2025-10-21 16:57:25,948 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo               .addTransformer:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 16:57:26,007 [main] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:109 - HikariPool-1 - Starting...
+2025-10-21 16:57:26,648 [main] INFO  com.zaxxer.hikari.pool.HikariPool                 .checkFailFast:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ae6d078
+2025-10-21 16:57:26,651 [main] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:122 - HikariPool-1 - Start completed.
+2025-10-21 16:57:26,747 [main] WARN  org.hibernate.orm.deprecation                     .constructDialect:153 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-21 16:57:26,749 [main] WARN  org.hibernate.orm.deprecation                     .logSelectedDialect:101 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-21 16:57:28,408 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                .initiateService:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 16:57:28,577 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 16:57:29,527 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 16:57:30,267 [main] INFO  c.f.p.ProductsApiApplicationTests                 .logStarted:56 - Started ProductsApiApplicationTests in 7.882 seconds (process running for 10.362)
+2025-10-21 16:57:31,144 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .destroy:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 16:57:31,148 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:349 - HikariPool-1 - Shutdown initiated...
+2025-10-21 16:57:31,160 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:351 - HikariPool-1 - Shutdown completed.
+2025-10-21 16:58:11,643 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarting:50 - Starting ProductsApiApplication using Java 17.0.16 with PID 9124 (C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi\target\classes started by koppa in C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi)
+2025-10-21 16:58:11,647 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStartupProfileInfo:654 - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 16:58:11,729 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-21 16:58:11,729 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-21 16:58:13,152 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 16:58:13,262 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:211 - Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2025-10-21 16:58:14,411 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .initialize:111 - Tomcat initialized with port 8080 (http)
+2025-10-21 16:58:14,430 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-21 16:58:14,434 [restartedMain] INFO  o.apache.catalina.core.StandardService            .log:173 - Starting service [Tomcat]
+2025-10-21 16:58:14,435 [restartedMain] INFO  org.apache.catalina.core.StandardEngine           .log:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-10-21 16:58:14,554 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring embedded WebApplicationContext
+2025-10-21 16:58:14,555 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    .prepareWebApplicationContext:296 - Root WebApplicationContext: initialization completed in 2825 ms
+2025-10-21 16:58:14,825 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper           .logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 16:58:14,954 [restartedMain] INFO  org.hibernate.Version                             .logVersion:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-10-21 16:58:15,029 [restartedMain] INFO  o.h.c.internal.RegionFactoryInitiator             .initiateService:50 - HHH000026: Second-level cache disabled
+2025-10-21 16:58:15,636 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo               .addTransformer:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 16:58:15,685 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:109 - HikariPool-1 - Starting...
+2025-10-21 16:58:16,256 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool                 .checkFailFast:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f1c77c
+2025-10-21 16:58:16,259 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:122 - HikariPool-1 - Start completed.
+2025-10-21 16:58:16,342 [restartedMain] WARN  org.hibernate.orm.deprecation                     .constructDialect:153 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-21 16:58:16,344 [restartedMain] WARN  org.hibernate.orm.deprecation                     .logSelectedDialect:101 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-21 16:58:17,792 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                .initiateService:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 16:58:17,901 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 16:58:18,593 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 16:58:19,264 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                .startServer:59 - LiveReload server is running on port 35729
+2025-10-21 16:58:19,288 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-21 16:58:19,321 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .start:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-10-21 16:58:19,337 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarted:56 - Started ProductsApiApplication in 8.376 seconds (process running for 9.671)
+2025-10-21 16:58:38,896 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-21 16:58:38,897 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2025-10-21 16:58:38,898 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:554 - Completed initialization in 1 ms
+2025-10-21 16:58:39,202 [http-nio-8080-exec-1] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category
+2025-10-21 16:58:39,288 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category]
+2025-10-21 16:59:48,195 [http-nio-8080-exec-3] INFO  c.f.p.r.ProductRestController                     .productsByCategory:60 - fetched products by category successfully
+2025-10-21 17:01:09,687 [http-nio-8080-exec-6] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category
+2025-10-21 17:01:09,689 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category]
+2025-10-21 17:08:36,151 [http-nio-8080-exec-8] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category
+2025-10-21 17:08:36,154 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category]
+2025-10-21 17:11:04,299 [http-nio-8080-exec-10] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category
+2025-10-21 17:11:04,308 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category]
+2025-10-21 17:15:27,715 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .destroy:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 17:15:27,751 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:349 - HikariPool-1 - Shutdown initiated...
+2025-10-21 17:15:27,786 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:351 - HikariPool-1 - Shutdown completed.
+2025-10-21 17:15:34,737 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarting:50 - Starting ProductsApiApplication using Java 17.0.16 with PID 8424 (C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi\target\classes started by koppa in C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi)
+2025-10-21 17:15:34,743 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStartupProfileInfo:654 - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 17:15:34,841 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-21 17:15:34,842 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-21 17:15:36,432 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 17:15:36,706 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:211 - Finished Spring Data repository scanning in 238 ms. Found 2 JPA repository interfaces.
+2025-10-21 17:15:37,871 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .initialize:111 - Tomcat initialized with port 8080 (http)
+2025-10-21 17:15:37,889 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-21 17:15:37,896 [restartedMain] INFO  o.apache.catalina.core.StandardService            .log:173 - Starting service [Tomcat]
+2025-10-21 17:15:37,896 [restartedMain] INFO  org.apache.catalina.core.StandardEngine           .log:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-10-21 17:15:38,003 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring embedded WebApplicationContext
+2025-10-21 17:15:38,004 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    .prepareWebApplicationContext:296 - Root WebApplicationContext: initialization completed in 3161 ms
+2025-10-21 17:15:38,295 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper           .logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 17:15:38,433 [restartedMain] INFO  org.hibernate.Version                             .logVersion:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-10-21 17:15:38,495 [restartedMain] INFO  o.h.c.internal.RegionFactoryInitiator             .initiateService:50 - HHH000026: Second-level cache disabled
+2025-10-21 17:15:39,091 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo               .addTransformer:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 17:15:39,141 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:109 - HikariPool-1 - Starting...
+2025-10-21 17:15:39,735 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool                 .checkFailFast:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26f1c77c
+2025-10-21 17:15:39,738 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:122 - HikariPool-1 - Start completed.
+2025-10-21 17:15:39,833 [restartedMain] WARN  org.hibernate.orm.deprecation                     .constructDialect:153 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-21 17:15:39,834 [restartedMain] WARN  org.hibernate.orm.deprecation                     .logSelectedDialect:101 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-21 17:15:41,374 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                .initiateService:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 17:15:41,533 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 17:15:42,363 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 17:15:43,127 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                .startServer:59 - LiveReload server is running on port 35729
+2025-10-21 17:15:43,152 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-21 17:15:43,187 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .start:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-10-21 17:15:43,203 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarted:56 - Started ProductsApiApplication in 9.111 seconds (process running for 10.358)
+2025-10-21 17:15:44,013 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-21 17:15:44,016 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2025-10-21 17:15:44,019 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:554 - Completed initialization in 2 ms
+2025-10-21 17:15:44,352 [http-nio-8080-exec-1] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category
+2025-10-21 17:15:44,460 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category]
+2025-10-21 17:15:47,173 [http-nio-8080-exec-2] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category
+2025-10-21 17:15:47,175 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category]
+2025-10-21 17:16:07,970 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .destroy:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 17:16:07,975 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:349 - HikariPool-1 - Shutdown initiated...
+2025-10-21 17:16:07,986 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:351 - HikariPool-1 - Shutdown completed.
+2025-10-21 17:16:15,840 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarting:50 - Starting ProductsApiApplication using Java 17.0.16 with PID 22180 (C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi\target\classes started by koppa in C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi)
+2025-10-21 17:16:15,845 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStartupProfileInfo:654 - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 17:16:15,917 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-21 17:16:15,917 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-21 17:16:17,244 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 17:16:17,355 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:211 - Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2025-10-21 17:16:18,420 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .initialize:111 - Tomcat initialized with port 8080 (http)
+2025-10-21 17:16:18,437 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-21 17:16:18,442 [restartedMain] INFO  o.apache.catalina.core.StandardService            .log:173 - Starting service [Tomcat]
+2025-10-21 17:16:18,442 [restartedMain] INFO  org.apache.catalina.core.StandardEngine           .log:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-10-21 17:16:18,550 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring embedded WebApplicationContext
+2025-10-21 17:16:18,551 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    .prepareWebApplicationContext:296 - Root WebApplicationContext: initialization completed in 2633 ms
+2025-10-21 17:16:18,804 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper           .logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 17:16:18,911 [restartedMain] INFO  org.hibernate.Version                             .logVersion:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-10-21 17:16:18,977 [restartedMain] INFO  o.h.c.internal.RegionFactoryInitiator             .initiateService:50 - HHH000026: Second-level cache disabled
+2025-10-21 17:16:19,487 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo               .addTransformer:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 17:16:19,531 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:109 - HikariPool-1 - Starting...
+2025-10-21 17:16:20,020 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool                 .checkFailFast:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3906ea7b
+2025-10-21 17:16:20,023 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:122 - HikariPool-1 - Start completed.
+2025-10-21 17:16:20,102 [restartedMain] WARN  org.hibernate.orm.deprecation                     .constructDialect:153 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-21 17:16:20,104 [restartedMain] WARN  org.hibernate.orm.deprecation                     .logSelectedDialect:101 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-21 17:16:21,517 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                .initiateService:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 17:16:21,631 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 17:16:22,323 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 17:16:23,010 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                .startServer:59 - LiveReload server is running on port 35729
+2025-10-21 17:16:23,028 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-21 17:16:23,064 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .start:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-10-21 17:16:23,081 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarted:56 - Started ProductsApiApplication in 7.792 seconds (process running for 8.87)
+2025-10-21 17:16:37,184 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-21 17:16:37,184 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2025-10-21 17:16:37,186 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:554 - Completed initialization in 2 ms
+2025-10-21 17:16:37,476 [http-nio-8080-exec-1] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category
+2025-10-21 17:16:37,568 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category]
+2025-10-21 17:19:02,761 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .destroy:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 17:19:02,766 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:349 - HikariPool-1 - Shutdown initiated...
+2025-10-21 17:19:02,783 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:351 - HikariPool-1 - Shutdown completed.
+2025-10-21 17:19:22,677 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarting:50 - Starting ProductsApiApplication using Java 17.0.16 with PID 25116 (C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi\target\classes started by koppa in C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi)
+2025-10-21 17:19:22,682 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStartupProfileInfo:654 - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 17:19:22,763 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-21 17:19:22,763 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-21 17:19:24,246 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 17:19:24,360 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:211 - Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+2025-10-21 17:19:25,479 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .initialize:111 - Tomcat initialized with port 8080 (http)
+2025-10-21 17:19:25,497 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-21 17:19:25,501 [restartedMain] INFO  o.apache.catalina.core.StandardService            .log:173 - Starting service [Tomcat]
+2025-10-21 17:19:25,501 [restartedMain] INFO  org.apache.catalina.core.StandardEngine           .log:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-10-21 17:19:25,608 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring embedded WebApplicationContext
+2025-10-21 17:19:25,609 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    .prepareWebApplicationContext:296 - Root WebApplicationContext: initialization completed in 2843 ms
+2025-10-21 17:19:25,875 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper           .logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 17:19:25,975 [restartedMain] INFO  org.hibernate.Version                             .logVersion:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-10-21 17:19:26,034 [restartedMain] INFO  o.h.c.internal.RegionFactoryInitiator             .initiateService:50 - HHH000026: Second-level cache disabled
+2025-10-21 17:19:26,583 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo               .addTransformer:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 17:19:26,628 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:109 - HikariPool-1 - Starting...
+2025-10-21 17:19:27,149 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool                 .checkFailFast:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1177d750
+2025-10-21 17:19:27,152 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:122 - HikariPool-1 - Start completed.
+2025-10-21 17:19:27,229 [restartedMain] WARN  org.hibernate.orm.deprecation                     .constructDialect:153 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-21 17:19:27,231 [restartedMain] WARN  org.hibernate.orm.deprecation                     .logSelectedDialect:101 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-21 17:19:28,784 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                .initiateService:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 17:19:28,899 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 17:19:29,745 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 17:19:30,605 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                .startServer:59 - LiveReload server is running on port 35729
+2025-10-21 17:19:30,637 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-21 17:19:30,678 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .start:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-10-21 17:19:30,700 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarted:56 - Started ProductsApiApplication in 8.624 seconds (process running for 9.754)
+2025-10-21 17:19:31,718 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-21 17:19:31,718 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2025-10-21 17:19:31,720 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:554 - Completed initialization in 1 ms
+2025-10-21 17:19:32,019 [http-nio-8080-exec-1] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category
+2025-10-21 17:19:32,121 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category]
+2025-10-21 17:19:58,852 [http-nio-8080-exec-2] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category
+2025-10-21 17:19:58,854 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category]
+2025-10-21 17:20:52,541 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .destroy:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 17:20:52,547 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:349 - HikariPool-1 - Shutdown initiated...
+2025-10-21 17:20:52,558 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:351 - HikariPool-1 - Shutdown completed.
+2025-10-21 17:21:24,800 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarting:50 - Starting ProductsApiApplication using Java 17.0.16 with PID 18268 (C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi\target\classes started by koppa in C:\Users\koppa\OneDrive\Documents\Desktop\AshokEcommers\productsApi)
+2025-10-21 17:21:24,804 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStartupProfileInfo:654 - No active profile set, falling back to 1 default profile: "default"
+2025-10-21 17:21:24,884 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-21 17:21:24,885 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor   .logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-21 17:21:26,279 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:143 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-21 17:21:26,389 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate         .registerRepositoriesIn:211 - Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2025-10-21 17:21:27,550 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .initialize:111 - Tomcat initialized with port 8080 (http)
+2025-10-21 17:21:27,573 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-21 17:21:27,578 [restartedMain] INFO  o.apache.catalina.core.StandardService            .log:173 - Starting service [Tomcat]
+2025-10-21 17:21:27,579 [restartedMain] INFO  org.apache.catalina.core.StandardEngine           .log:173 - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-10-21 17:21:27,723 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring embedded WebApplicationContext
+2025-10-21 17:21:27,724 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    .prepareWebApplicationContext:296 - Root WebApplicationContext: initialization completed in 2836 ms
+2025-10-21 17:21:27,988 [restartedMain] INFO  o.hibernate.jpa.internal.util.LogHelper           .logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-21 17:21:28,102 [restartedMain] INFO  org.hibernate.Version                             .logVersion:44 - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-10-21 17:21:28,160 [restartedMain] INFO  o.h.c.internal.RegionFactoryInitiator             .initiateService:50 - HHH000026: Second-level cache disabled
+2025-10-21 17:21:28,674 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo               .addTransformer:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-21 17:21:28,720 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:109 - HikariPool-1 - Starting...
+2025-10-21 17:21:29,212 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool                 .checkFailFast:554 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2850c5da
+2025-10-21 17:21:29,216 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource                .getConnection:122 - HikariPool-1 - Start completed.
+2025-10-21 17:21:29,286 [restartedMain] WARN  org.hibernate.orm.deprecation                     .constructDialect:153 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-21 17:21:29,289 [restartedMain] WARN  org.hibernate.orm.deprecation                     .logSelectedDialect:101 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-10-21 17:21:30,665 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                .initiateService:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-21 17:21:30,778 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 17:21:31,593 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-21 17:21:32,271 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer                .startServer:59 - LiveReload server is running on port 35729
+2025-10-21 17:21:32,299 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol          .log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-21 17:21:32,345 [restartedMain] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer           .start:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-10-21 17:21:32,363 [restartedMain] INFO  c.f.productsApi.ProductsApiApplication            .logStarted:56 - Started ProductsApiApplication in 8.15 seconds (process running for 9.23)
+2025-10-21 17:22:10,605 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                .log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-21 17:22:10,606 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2025-10-21 17:22:10,608 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet                 .initServletBean:554 - Completed initialization in 2 ms
+2025-10-21 17:22:10,866 [http-nio-8080-exec-1] ERROR c.f.p.exception.AppExceptionHandler               .handleException:30 - products not available in this category : /products/{categoryId}
+2025-10-21 17:22:10,956 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   .logException:247 - Resolved [com.fitFusion.productsApi.exception.NoProductsFoundException: products not available in this category : /products/{categoryId}]
+2025-10-21 17:22:28,040 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean    .destroy:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-21 17:22:28,045 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:349 - HikariPool-1 - Shutdown initiated...
+2025-10-21 17:22:28,056 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                .close:351 - HikariPool-1 - Shutdown completed.
